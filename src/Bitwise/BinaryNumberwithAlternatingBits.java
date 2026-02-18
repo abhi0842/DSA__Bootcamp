@@ -1,6 +1,10 @@
 package Bitwise;
 
 public class BinaryNumberwithAlternatingBits {
+    public static boolean hasAlternatingBitsusingXOR(int n) {
+       int x=n^(n>>1);
+       return (x&(x+1))==0;
+    }
     public static boolean hasAlternatingBits(int n) {
         int pre=n&1;
         n=n>>1;
