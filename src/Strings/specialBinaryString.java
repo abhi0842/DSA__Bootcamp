@@ -6,7 +6,7 @@ import java.util.List;
 
 public class specialBinaryString {
     public static String makeLargestSpecial(String s) {
-
+        if(s.length()==0) return "";
         List<String> list=new ArrayList<>();
         int start=0;
         int sum=0;
